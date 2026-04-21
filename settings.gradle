@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        // 阿里云镜像（加速）
+        maven {
+            name = 'Aliyun Maven'
+            url = 'https://maven.aliyun.com/repository/public/'
+        }
+        maven {
+            name = 'Aliyun Gradle'
+            url = 'https://maven.aliyun.com/repository/gradle-plugin/'
+        }
+        maven {
+            name = 'Aliyun Central'
+            url = 'https://maven.aliyun.com/repository/central/'
+        }
+        /*
+        mavenCentral()
+        maven {
+            url = "https://repository.hanbings.io/releases"
+        }
+        maven {
+            url = "https://repository.hanbings.io/proxy"
+        }
+        maven {
+            url = "https://repository.hanbings.io/snapshots"
+        }
+        */
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'mper'
