@@ -27,6 +27,7 @@ out/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+run
 
 ### NetBeans ###
 /nbproject/private/
@@ -40,3 +41,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+*.mp3
+*.mp4
+/*.jpg

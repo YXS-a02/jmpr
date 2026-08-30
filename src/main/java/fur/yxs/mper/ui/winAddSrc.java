@@ -34,7 +34,6 @@ public class winAddSrc {
         gridPane.setVgap(5);
         gridPane.setHgap(5);
 
-        //
         inputT.getItems().addAll("File","NetApi");
         buttonOk.setOnAction(e -> subStage.close());
         buttonClose.setOnAction(e -> subStage.close());
@@ -55,5 +54,14 @@ public class winAddSrc {
     public void open(){
         subStage.setScene(new Scene(gridPane));
         subStage.show();
+    }
+    public void set(){
+        buttonClose.setOnAction(e -> {
+            // 关闭窗口
+            subStage.close();
+        });
+        buttonOk.setOnAction(e -> {
+            // 添加源逻辑
+        });
     }
 }

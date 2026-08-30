@@ -1,3 +1,6 @@
+package fur.yxs.mper.core;
+import java.awt.GraphicsEnvironment;
+
 public class EnvironmentDetector {
     /**
      * 环境类型枚举

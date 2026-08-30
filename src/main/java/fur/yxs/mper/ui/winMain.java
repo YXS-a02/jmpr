@@ -14,7 +14,7 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 
 public class winMain {
-    public gui g;
+    public gui gui;
     public final HBox mainLayout = new HBox();
     public final VBox leftBar = new VBox(10);
     public final HBox playerAction = new HBox(10);
@@ -39,7 +39,7 @@ public class winMain {
      * 创建主场景 - 所有UI组件的入口
      */
     winMain(gui G) {
-        g = G;
+        gui = G;
         // 创建主布局 (对应 QHBoxLayout stretch="4,1")
         mainLayout.setSpacing(10);
         HBox.setHgrow(mainLayout, Priority.ALWAYS);
@@ -126,7 +126,6 @@ public class winMain {
         addButton.setId("srcAdd");
         addButton.setPrefWidth(60);
         addButton.setStyle("-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold;");
-        
         // 删除按钮 (对应 srcRemove)
         removeButton.setId("srcRemove");
         removeButton.setPrefWidth(60);
@@ -157,10 +156,13 @@ public class winMain {
         HBox.setHgrow(leftBar, Priority.ALWAYS);
         HBox.setHgrow(rightBar, Priority.NEVER);
         // 创建场景
+        set();
     }
     public void set(){
         addButton.setOnAction(e -> {
             // 添加源逻辑 - 由其他类实现
+
+            gui.was.open();
         });
     }
     public void open(){
